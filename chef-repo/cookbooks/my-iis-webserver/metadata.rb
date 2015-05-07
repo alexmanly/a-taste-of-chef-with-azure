@@ -2,7 +2,7 @@ name             'my-iis-webserver'
 maintainer       'Alex Manly'
 maintainer_email 'am@chef.io'
 license          'All rights reserved'
-description      'Installs/Configures iis-webserver cookbook'
+description      'Installs/Configures my-iis-webserver cookbook'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.0.1'
 
