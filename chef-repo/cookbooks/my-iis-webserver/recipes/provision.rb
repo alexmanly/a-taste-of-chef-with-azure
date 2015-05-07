@@ -1,3 +1,5 @@
+#include_recipe 'my-iis-webserver::_azure_settings'
+
 require 'chef/provisioning/azure_driver'
 with_driver 'azure'
 
