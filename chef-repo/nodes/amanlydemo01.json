@@ -1,0 +1,24 @@
+{
+  "name": "amanlydemo01",
+  "normal": {
+    "tags": [
+      "my-iis-webserver"
+    ],
+    "chef_provisioning": {
+      "reference": {
+        "driver_url": "azure:43e53945-f02b-4269-8854-ad7dd14ac6f2",
+        "driver_version": "0.3.2",
+        "allocated_at": "2015-05-07 23:32:39 UTC",
+        "host_node": "http://localhost:8889/nodes/",
+        "image_id": "a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-R2-201502.01-en.us-127GB.vhd",
+        "location": "West US",
+        "cloud_service": "amanly-cs-demo",
+        "vm_name": "amanlydemo01",
+        "is_windows": true
+      }
+    }
+  },
+  "run_list": [
+    "recipe[my-iis-webserver::default]"
+  ]
+}
