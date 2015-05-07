@@ -1,0 +1,31 @@
+{
+  "name": "msdeploy",
+  "description": "This cookbook provides support for using MSDeploy inside Chef cookbooks",
+  "long_description": "msdeploy Cookbook\n=================\nThis cookbook provides support for using MSDeploy inside Chef cookbooks\n\nRequirements\n------------\n#### cookbooks\n- `webpi` - msdeploy needs webpi to install MSDeploy\n\n-----\n#### msdeploy::install\nThis recipe installs MSDeploy 3.0 via Web Platform Installer\n\ne.g.\nJust include `msdeploy::install` in your node's `run_list`:\n\n```json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[msdeploy:install]\"\n  ]\n}\n```\n\n#### msdeploy_sync resource\nThis resource allows you to sync two places (e.g. package and IIS site) using MSDeploy. \n\nThere is only one action `:sync`.\n\nTo run synchornisation you need to provide values for two attributes: `source` and `dest`. Both of them has the same format: `:provider => 'provider_path'`. \nAs provider you can pass any valid MSDeploy provider like `contentPath`, `package`, etc. `provider_path` must be valid path for given provider (e.g. path to zip package). If provider does not require path, pass `nil`.\n\nLicense and Authors\n-------------------\nAuthors: Maciej T. Nowak\n",
+  "maintainer": "Maciej T. Nowak",
+  "maintainer_email": "maciejt.nowak@gmail.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "windows": ">= 0.0.0"
+  },
+  "dependencies": {
+    "webpi": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.0"
+}
