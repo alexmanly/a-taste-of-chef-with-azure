@@ -31,10 +31,10 @@ suites:
     run_list:
       - recipe[windows::default]
       - recipe[git::default]
-      - recipe[iis-webserver::default]
-      - recipe[iis-webserver::app_checkout]
+      - recipe[my-iis-webserver::default]
+      - recipe[my-iis-webserver::app_checkout]
     attributes:
-      iis-webserver:
+      my-iis-webserver:
         git-repo: https://github.com/alexmanly/myhtml-app
         git-revision: master
         doc-root: c:/inetpub/wwwroot

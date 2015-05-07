@@ -1,12 +1,12 @@
 #
-# Cookbook Name:: iis-webserver
+# Cookbook Name:: my-iis-webserver
 # Spec:: default
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'iis-webserver::default' do
+describe 'my-iis-webserver::default' do
 
   context 'When all attributes are default, on an unspecified platform' do
 

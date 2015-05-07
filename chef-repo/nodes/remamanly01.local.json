@@ -195,7 +195,7 @@
       "log": "/Users/amanly/.chef/local-mode-cache/cache/WebPI.log",
       "home": "\\webpi"
     },
-    "iis-webserver": {
+    "my-iis-webserver": {
       "doc-root": "c:/inetpub/wwwroot",
       "git-repo": "https://github.com/alexmanly/myhtml-app",
       "git-revision": "master"
@@ -273,9 +273,9 @@
       "/dev/disk1": {
         "block_size": 512,
         "kb_size": 487358352,
-        "kb_used": 289107624,
-        "kb_available": 197994728,
-        "percent_used": "60%",
+        "kb_used": 307081032,
+        "kb_available": 180021320,
+        "percent_used": "64%",
         "mount": "/",
         "fs_type": "hfs",
         "mount_options": [
@@ -905,9 +905,9 @@
     },
     "memory": {
       "total": "16384MB",
-      "active": "11208MB",
-      "inactive": "1366MB",
-      "free": "3807MB"
+      "active": "9675MB",
+      "inactive": "2441MB",
+      "free": "4266MB"
     },
     "network": {
       "interfaces": {
@@ -994,7 +994,9 @@
           "encapsulation": "Ethernet",
           "arp": {
             "192.168.0.1": "e0:91:f5:d5:65:56",
-            "192.168.0.10": "88:87:17:44:c4:80",
+            "192.168.0.3": "0:e:58:26:bc:54",
+            "192.168.0.12": "c0:63:94:a4:e6:43",
+            "192.168.0.18": "20:a2:e4:22:c0:75",
             "192.168.0.255": "ff:ff:ff:ff:ff:ff"
           }
         },
@@ -1417,8 +1419,8 @@
         "net.inet.tcp.sack_globalholes": "0",
         "net.inet.tcp.minmss": "216",
         "net.inet.tcp.do_tcpdrain": "0",
-        "net.inet.tcp.pcbcount": "248",
-        "net.inet.tcp.tw_pcbcount": "1",
+        "net.inet.tcp.pcbcount": "90",
+        "net.inet.tcp.tw_pcbcount": "6",
         "net.inet.tcp.icmp_may_rst": "1",
         "net.inet.tcp.strict_rfc1948": "0",
         "net.inet.tcp.isn_reseed_interval": "0",
@@ -1435,14 +1437,14 @@
         "net.inet.tcp.timer_fastmode_idlemax": "10",
         "net.inet.tcp.broken_peer_syn_rxmit_thres": "7",
         "net.inet.tcp.broken_peer_syn_rexmit_thres_local": "10",
-        "net.inet.tcp.tcp_timer_advanced": "825",
-        "net.inet.tcp.tcp_resched_timerlist": "463833",
+        "net.inet.tcp.tcp_timer_advanced": "833",
+        "net.inet.tcp.tcp_resched_timerlist": "507655",
         "net.inet.tcp.pmtud_blackhole_detection": "1",
         "net.inet.tcp.pmtud_blackhole_mss": "1200",
         "net.inet.tcp.cc_debug": "0",
         "net.inet.tcp.newreno_sockets": "0",
-        "net.inet.tcp.background_sockets": "18",
-        "net.inet.tcp.cubic_sockets": "229",
+        "net.inet.tcp.background_sockets": "37",
+        "net.inet.tcp.cubic_sockets": "53",
         "net.inet.tcp.use_newreno": "0",
         "net.inet.tcp.cubic_tcp_friendliness": "0",
         "net.inet.tcp.cubic_fast_convergence": "0",
@@ -1458,7 +1460,7 @@
         "net.inet.udp.recvspace": "196724",
         "net.inet.udp.log_in_vain": "0",
         "net.inet.udp.blackhole": "0",
-        "net.inet.udp.pcbcount": "126",
+        "net.inet.udp.pcbcount": "130",
         "net.inet.udp.randomize_ports": "1",
         "net.inet.ipsec.def_policy": "1",
         "net.inet.ipsec.esp_trans_deflev": "1",
@@ -1715,9 +1717,9 @@
         "interfaces": {
           "lo0": {
             "rx": {
-              "bytes": "503339",
+              "bytes": "527753",
               "packets": "0",
-              "errors": "87095070",
+              "errors": "92700519",
               "drop": 0,
               "overrun": 0,
               "frame": 0,
@@ -1727,7 +1729,7 @@
             "tx": {
               "bytes": "0",
               "packets": "0",
-              "errors": "87095070",
+              "errors": "92700519",
               "drop": 0,
               "overrun": 0,
               "collisions": "0",
@@ -1781,8 +1783,8 @@
           },
           "en0": {
             "rx": {
-              "bytes": "68069472488",
-              "packets": "50846540",
+              "bytes": "87094096269",
+              "packets": "64129044",
               "errors": "0",
               "drop": 0,
               "overrun": 0,
@@ -1791,8 +1793,8 @@
               "multicast": 0
             },
             "tx": {
-              "bytes": "3137005480",
-              "packets": "29771541",
+              "bytes": "3679244802",
+              "packets": "36706398",
               "errors": "0",
               "drop": 0,
               "overrun": 0,
@@ -2121,8 +2123,8 @@
     "platform_version": "10.10.2",
     "platform_build": "14C1510",
     "platform_family": "mac_os_x",
-    "uptime_seconds": 1786447,
-    "uptime": "20 days 16 hours 14 minutes 07 seconds",
+    "uptime_seconds": 1812790,
+    "uptime": "20 days 23 hours 33 minutes 10 seconds",
     "languages": {
       "c": {
         "gcc": {
@@ -2199,7 +2201,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.11519700288772583,
+        "_SPResponseTime": 0.11544603109359741,
         "_dataType": "SPAirPortData"
       },
       {
@@ -2211,7 +2213,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1538960337638855,
+        "_SPResponseTime": 0.14779996871948242,
         "_dataType": "SPAudioData"
       },
       {
@@ -2223,7 +2225,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.15387898683547974,
+        "_SPResponseTime": 0.147816002368927,
         "_dataType": "SPBluetoothData"
       },
       {
@@ -2235,7 +2237,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1539289951324463,
+        "_SPResponseTime": 0.15195095539093018,
         "_dataType": "SPCardReaderData"
       },
       {
@@ -2247,7 +2249,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14369702339172363,
+        "_SPResponseTime": 0.14061897993087769,
         "_dataType": "SPDiagnosticsData"
       },
       {
@@ -2259,7 +2261,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1437000036239624,
+        "_SPResponseTime": 0.14056396484375,
         "_dataType": "SPDiscBurningData"
       },
       {
@@ -2271,7 +2273,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14125001430511475,
+        "_SPResponseTime": 0.1480080485343933,
         "_dataType": "SPDisplaysData"
       },
       {
@@ -2283,7 +2285,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14362800121307373,
+        "_SPResponseTime": 0.14055997133255005,
         "_dataType": "SPEthernetData"
       },
       {
@@ -2295,7 +2297,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14368098974227905,
+        "_SPResponseTime": 0.1407090425491333,
         "_dataType": "SPFibreChannelData"
       },
       {
@@ -2307,7 +2309,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14512699842453003,
+        "_SPResponseTime": 0.1518380045890808,
         "_dataType": "SPFireWireData"
       },
       {
@@ -2319,8 +2321,8 @@
           "-detailLevel",
           "full"
         ],
-        "_SPCompletionInterval": 0.018099963665008545,
-        "_SPResponseTime": 0.1346229910850525,
+        "_SPCompletionInterval": 0.020235002040863037,
+        "_SPResponseTime": 0.13830101490020752,
         "_dataType": "SPHardwareDataType",
         "_detailLevel": "-2",
         "_items": [
@@ -2473,7 +2475,7 @@
             "_detailLevel": "0"
           }
         },
-        "_timeStamp": "2015-05-07T13:55:03+00:00",
+        "_timeStamp": "2015-05-07T21:14:08+00:00",
         "_versionInfo": {
           "com.apple.SystemProfiler.SPPlatformReporter": "1443"
         }
@@ -2487,7 +2489,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14114397764205933,
+        "_SPResponseTime": 0.14798903465270996,
         "_dataType": "SPHardwareRAIDData"
       },
       {
@@ -2499,7 +2501,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14121997356414795,
+        "_SPResponseTime": 0.14798098802566528,
         "_dataType": "SPMemoryData"
       },
       {
@@ -2511,7 +2513,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14333099126815796,
+        "_SPResponseTime": 0.13926899433135986,
         "_dataType": "SPModemData"
       },
       {
@@ -2523,7 +2525,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14332300424575806,
+        "_SPResponseTime": 0.13934201002120972,
         "_dataType": "SPNetworkData"
       },
       {
@@ -2535,7 +2537,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14345097541809082,
+        "_SPResponseTime": 0.13922196626663208,
         "_dataType": "SPPCIData"
       },
       {
@@ -2547,7 +2549,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.1539210081100464,
+        "_SPResponseTime": 0.14778900146484375,
         "_dataType": "SPParallelATAData"
       },
       {
@@ -2559,7 +2561,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.13979601860046387,
+        "_SPResponseTime": 0.13581198453903198,
         "_dataType": "SPParallelSCSIData"
       },
       {
@@ -2571,7 +2573,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14273500442504883,
+        "_SPResponseTime": 0.14840900897979736,
         "_dataType": "SPPrintersData"
       },
       {
@@ -2583,7 +2585,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14273601770401,
+        "_SPResponseTime": 0.16122597455978394,
         "_dataType": "SPPrintersSoftwareData"
       },
       {
@@ -2595,7 +2597,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14279496669769287,
+        "_SPResponseTime": 0.14875298738479614,
         "_dataType": "SPSASData"
       },
       {
@@ -2607,7 +2609,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14262104034423828,
+        "_SPResponseTime": 0.14858102798461914,
         "_dataType": "SPSerialATAData"
       },
       {
@@ -2619,7 +2621,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14757204055786133,
+        "_SPResponseTime": 0.14969795942306519,
         "_dataType": "SPSoftwareData"
       },
       {
@@ -2631,7 +2633,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14771205186843872,
+        "_SPResponseTime": 0.14955300092697144,
         "_dataType": "SPThunderboltData"
       },
       {
@@ -2643,7 +2645,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14756101369857788,
+        "_SPResponseTime": 0.1494399905204773,
         "_dataType": "SPUSBData"
       },
       {
@@ -2655,7 +2657,7 @@
           "-detailLevel",
           "full"
         ],
-        "_SPResponseTime": 0.14754700660705566,
+        "_SPResponseTime": 0.13791000843048096,
         "_dataType": "SPWWANData"
       }
     ],
@@ -2670,7 +2672,7 @@
 
       }
     },
-    "ohai_time": 1431006903.875144,
+    "ohai_time": 1431033249.012034,
     "etc": {
       "passwd": {
         "_amavisd": {
@@ -3934,13 +3936,14 @@
     "current_user": "root",
     "root_group": "wheel",
     "recipes": [
-      "iis-webserver::destroy"
+      "my-iis-webserver::destroy",
+      "my-iis-webserver::_azure_settings"
     ],
     "roles": [
 
     ]
   },
   "run_list": [
-    "recipe[iis-webserver::destroy]"
+    "recipe[my-iis-webserver::destroy]"
   ]
 }

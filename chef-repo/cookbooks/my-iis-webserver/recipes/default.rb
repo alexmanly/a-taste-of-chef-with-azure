@@ -1,11 +1,11 @@
 #
-# Cookbook Name:: iis-webserver
+# Cookbook Name:: my-iis-webserver
 # Recipe:: default
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 #
 
-log "*** Hello from the iis-webserver::default recipe!"
+log "*** Hello from the my-iis-webserver::default recipe!"
 
 # Use the registry_key resource to change the startup type for the chef-client service
 registry_key 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\chef-client' do

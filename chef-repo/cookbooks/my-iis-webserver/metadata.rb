@@ -1,4 +1,4 @@
-name             'iis-webserver'
+name             'my-iis-webserver'
 maintainer       'Alex Manly'
 maintainer_email 'am@chef.io'
 license          'All rights reserved'
@@ -11,5 +11,5 @@ depends 'iis'
 depends 'git'
 depends 'msdeploy'
 
-recipe 'iis-webserver::default', 'Default recipe to install IIS'
-recipe 'iis-webserver::app_checkout', 'Recipe to deploy public git code'
+recipe 'my-iis-webserver::default', 'Default recipe to install IIS'
+recipe 'my-iis-webserver::app_checkout', 'Recipe to deploy public git code'
