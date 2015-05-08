@@ -92,17 +92,17 @@ $ cat environments/demo_env.json
   }
 }
 ```
-Upload the environment to the Chef server
-```
-knife environment from file demo_env.json
-```
+
 
 1. Clone this repository.
 2. Either:
   * Request access to the https://api.opscode.com/organizations/a_taste_of_chef_with_azure manage chef organisation or use your own server.  Once you have access to the organisation download the client and org PEM files and add them to the [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef directory.  Edit the [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef/knife.rb with the new PEM files.
   * Or if you use your own server then configure the .chef directory to point to your server and upload all the cookbooks from this repository to your server.
+3. Upload the environment to the Chef server
+```
+knife environment from file demo_env.json
+```
 4. Run this command from chef-repo directory [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-rep:
-
 ```
 sudo chef-client -c [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef/knife.rb -E $(CHEF_ENV) -r 'recipe[my-iis-webserver::provision]'
 ```
