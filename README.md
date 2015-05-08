@@ -83,6 +83,7 @@ $ cat environments/demo_env.json
       },
       "azure": {
         "vm_user": "localadmin",
+        "count": "1",
         "location": "West US",
         "tcp_endpoints": "80:80",
         "password": "P2ssw0rd",
