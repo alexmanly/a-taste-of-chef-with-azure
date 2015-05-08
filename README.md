@@ -105,10 +105,10 @@ knife environment from file demo_env.json
 ```
 * Provision the infrastructure by running this command from chef-repo directory [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-rep:
 ```
-sudo chef-client -c [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef/knife.rb -E $(CHEF_ENV) -r 'recipe[my-iis-webserver::provision]'
+sudo chef-client -c [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef/knife.rb -E ${CHEF_ENV} -r 'recipe[my-iis-webserver::provision]'
 ```
 * Get the IP address of the newly created VM from Azure and then put it into a browser and test the web site has been deployed.
 * Destroy the infrastructure by running this command from chef-repo directory [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-rep:
 ```
-sudo chef-client -c [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef/knife.rb -E $(CHEF_ENV) -r 'recipe[my-iis-webserver::destroy]'
+sudo chef-client -c [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef/knife.rb -E ${CHEF_ENV} -r 'recipe[my-iis-webserver::destroy]'
 ```
