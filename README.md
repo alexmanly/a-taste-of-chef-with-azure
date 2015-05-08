@@ -30,7 +30,7 @@ Windows
 
 ##Microsoft Azure configuration file
 
-Azure configuration for Chef Provisioning is expected to be found in a file called ~/.azure/config or %USERPROFILE%\.azure\config depending on your platform.  The file should look something like the following (note: the subscription id can be found within the downloaded .publishsettings file against your subscription name):
+Azure configuration for Chef Provisioning is expected to be found in a file called ~/.azure/config or %USERPROFILE%\\.azure\config depending on your platform.  The file should look something like the following (note: the subscription id can be found within the downloaded .publishsettings file against your subscription name):
 
 Mac:
 ```
