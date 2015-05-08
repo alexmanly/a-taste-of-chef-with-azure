@@ -33,10 +33,15 @@ azure_cloud_service node['my-iis-webserver']['azure']['cloud_service_name'] do
   options :location => node['my-iis-webserver']['azure']['location']
 end
 
-machine node['my-iis-webserver']['azure']['vm_name'] do
-  machine_options machine_options
-  recipe "my-iis-webserver::default"
-  tag "my-iis-webserver"
-  converge true
-  action :converge
+machine_batch "#{node['my-iis-webserver']['azure']['count']}-nodes" do
+  1.upto(node['my-iis-webserver']['azure']['count'].to_i) do |i|
+    instance = node['my-iis-webserver']['azure']['vm_name'] + "-#{i}"
+    machine instance do
+      machine_options machine_options
+      recipe "my-iis-webserver::default"
+      tag "my-iis-webserver"
+      converge true
+      action :converge
+    end
+  end
 end

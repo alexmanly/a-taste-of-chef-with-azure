@@ -5,9 +5,10 @@ default['my-iis-webserver']['git-revision']                   = 'master'
 default['my-iis-webserver']['demo']['name']                  = 'amanly'
 
 default['my-iis-webserver']['azure']['vm_user']               = 'localadmin'
-default['my-iis-webserver']['azure']['cloud_service_name']    = node['my-iis-webserver']['demo']['name'] + '-cs-demo'
-default['my-iis-webserver']['azure']['storage_account_name']  = node['my-iis-webserver']['demo']['name'] + 'sademo'
-default['my-iis-webserver']['azure']['vm_name']               = node['my-iis-webserver']['demo']['name'] + 'demo01'
+default['my-iis-webserver']['azure']['cloud_service_name']    = node['my-iis-webserver']['demo']['name'] + '-cs'
+default['my-iis-webserver']['azure']['storage_account_name']  = node['my-iis-webserver']['demo']['name'] + 'sa'
+default['my-iis-webserver']['azure']['vm_name']               = node['my-iis-webserver']['demo']['name']
+default['my-iis-webserver']['azure']['count']                 = 1
 default['my-iis-webserver']['azure']['location']              = 'West US'
 default['my-iis-webserver']['azure']['tcp_endpoints']         = '80:80'
 default['my-iis-webserver']['azure']['winrm_transport']['https']['disable_sspi']  = false

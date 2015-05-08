@@ -22,9 +22,14 @@ machine_options = {
   :image_id => node['my-iis-webserver']['azure']['image_id'] #required
 }
 
-machine node['my-iis-webserver']['azure']['vm_name'] do
- machine_options machine_options
- action :destroy
+machine_batch "#{node['my-iis-webserver']['azure']['count']}-nodes" do
+  1.upto(node['my-iis-webserver']['azure']['count'].to_i) do |i|
+    instance = node['my-iis-webserver']['azure']['vm_name'] + "-#{i}"
+    machine instance do
+      machine_options machine_options
+      action :destroy
+    end
+  end
 end
 
 azure_storage_account node['my-iis-webserver']['azure']['storage_account_name'] do
