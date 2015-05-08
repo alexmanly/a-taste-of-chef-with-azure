@@ -1,6 +1,6 @@
 # A Taste of Chef with Azure
 
-The purpose of this project is to provide a Chef repository which contains examples of how to provision a Window Server 2012 R2  in Azure and then install a Microsoft IIS web server and then deploy a static web site downloaded from a public Git repository.  
+The purpose of this project is to show how to use Chef to provision a Window Server 2012 R2 in Azure, install a Microsoft IIS web server and then deploy a static web site downloaded from a public Git repository.  
 
 | Recipe           | Description                |
 | -----------------| -------------------------- |
