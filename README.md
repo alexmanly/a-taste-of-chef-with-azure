@@ -74,12 +74,15 @@ $ cat environments/demo_env.json
         "location": "West US",
         "tcp_endpoints": "80:80",
         "password": "P2ssw0rd",
-        "image_id": "a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-R2-201502.01-en.us-127GB.vhd",
-        "geo_replication_enabled": false,
+        "image_id": "a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-R2-201502.01-en.us-127GB.vhd"
       }
     }
   }
 }
+```
+Upload the environment to the Chef server
+```
+knife environment from file demo_env.json
 ```
 
 1. Clone this repository.
