@@ -32,3 +32,5 @@ end
 file 'c:/inetpub/wwwroot/welcome.png' do
   action :delete
 end
+
+include_recipe 'my-iis-webserver::app_checkout'

@@ -6,7 +6,7 @@
 
 log "*** Hello from the iis-webserver::app_checkout recipe!"
 
-include_recipe 'git::windows'
+include_recipe 'git::default'
 
 # Add app version to node data. Unknown for now
 node.set['my-iis-webserver']['app-ver'] = 'unknown'
