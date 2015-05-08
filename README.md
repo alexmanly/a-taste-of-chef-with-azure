@@ -36,13 +36,13 @@ Mac:
 ```
 [default]
 management_certificate = "/users/USERNAME/.azure/mgmtcert.pfx"
-subscription_id = "b6e7eee9-12ab-12ab-12ab-03ab624df016"
+subscription_id = "43e53945-f02b-4269-8854-ad7dd14ac6f2"
 ```
 Windows:
 ```
 [default]
 management_certificate = "c:\users\USERNAME\mgmtcert.pfx"
-subscription_id = "b6e7eee9-12ab-12ab-12ab-03ab624df016"
+subscription_id = "43e53945-f02b-4269-8854-ad7dd14ac6f2"
 ```
 
 ##  Install the Azure provisioning Gems.
