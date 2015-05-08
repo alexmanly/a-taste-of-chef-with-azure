@@ -6,3 +6,4 @@
 .chef/*.pem
 .chef/encrypted_data_bag_secret
 .chef/syntaxcache
+environments/amdemoenv.json
