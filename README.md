@@ -6,3 +6,4 @@
 4) Edit the [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef/knife.rb with the new PEM files.
 5) Ensure the Azure credentials are correct in the ~/.azure directory.
 6) Run this command from chef-repo: sudo chef-client -c [PATH_TO_REPO]/a-taste-of-chef-with-azure/chef-repo/.chef/knife.rb -r 'recipe[my-iis-webserver::provision]'
+
