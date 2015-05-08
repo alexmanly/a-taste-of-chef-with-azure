@@ -7,7 +7,7 @@ The main cookbook to in this repository is 'my-iis-webserver'.
 | Recipe           | Description                |
 | -----------------| -------------------------- |
 | `my-iis-webserver::default` | The `default` recipe will install IIS and then call the `app_checkout` recipe. |
-| `my-iis-webserver::app_checkout` | The `app_checkout` recipe will install Git and then use git to download and install the static web site. |
+| `my-iis-webserver::app_checkout` | The `app_checkout` recipe will install Git and then use git to download and install the static web site into the IIS web server. |
 | `my-iis-webserver::provision` | The `provision` recipe will create the following azure resources: storage account, cloud service and a Window Server 2012 R2 virtual machine configured with the `default` recipe. |
 | `my-iis-webserver::destroy` | The `destroy` recipe will destroy the azure resources created in the `provision` recipe. |
 
