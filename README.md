@@ -1,5 +1,16 @@
 # A Taste of Chef with Azure
 
+The purpose of this project is to provide a Chef repository which contains examples of how to provision a Window Server 2012 R2  in Azure and then install a Microsoft IIS web server and then deploy a static web site downloaded from a public Git repository.  
+
+| Recipe           | Description                |
+| -----------------| -------------------------- |
+| `my-iis-webserver::default` | The `default` recipe will install IIS and then call the `app_checkout` recipe. |
+| `my-iis-webserver::app_checkout` | The `app_checkout` recipe will install Git and then use git to download and install the static web site. |
+| `my-iis-webserver::provision` | The `provision` recipe will create the following azure resources: storage account, cloud service and a Window Server 2012 R2 virtual machine configured with the `default` recipe. |
+| `my-iis-webserver::destroy` | The `destroy` recipe will destroy the azure resources created in the `provision` recipe. |
+
+The main cookbook to in this repository is 'my-iis-webserver'.  The 'default' recipe will install IIS and then call the 'app_checkout' recipe, which will 
+
 ## Microsoft Azure Management Certificate installation
 To retrieve the .PFX file required, follow the steps in this great blog post from Stuart Preston (kudos to Stuart Preston for all his help):
 
