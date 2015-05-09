@@ -69,6 +69,8 @@ $ export CHEF_ENV=demo_env
 
 __UPDATE THE LINES STARTING WITH `>>` to your values.__
 
+Note the name field below has the following azure restrictions
+( Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only ).
 ```
 $ cat environments/demo_env.json
 {
